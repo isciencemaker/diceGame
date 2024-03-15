@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D6B14F76-450C-4893-BD07-F42519125B6E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisionDIce/ImmersiveView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881 - 3de9a93489440c9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in VisionDIce.ImmersiveView.body.getter : some"
+                  moduleName = "VisionDIce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Learn/VisionDIce/VisionDIce/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881 - 7db6a46b6254f660"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in VisionDIce.ImmersiveView.body.getter : some"
+                  moduleName = "VisionDIce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Learn/VisionDIce/VisionDIce/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881 - 5b7a3562e63ef406"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RealityKit.Entity) -&gt; () in closure #1 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in VisionDIce.ImmersiveView.body.getter : some"
+                  moduleName = "VisionDIce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Learn/VisionDIce/VisionDIce/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881 - 3de9a93489440a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in VisionDIce.ImmersiveView.body.getter : some"
+                  moduleName = "VisionDIce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Learn/VisionDIce/VisionDIce/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "B6E10DE9-091E-4328-A7DC-25FA5AC77881 - 7db6a46b6254f070"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for closure #1 @Swift.MainActor @Sendable (inout _RealityKit_SwiftUI.RealityViewContent) async -&gt; () in VisionDIce.ImmersiveView.body.getter : some"
+                  moduleName = "VisionDIce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Learn/VisionDIce/VisionDIce/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
