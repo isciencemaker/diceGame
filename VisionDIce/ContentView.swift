@@ -6,58 +6,67 @@
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
 
-//    @State private var showImmersiveSpace = false
-//    @State private var immersiveSpaceIsShown = false
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
-//    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
-    var diceData: DiceData 
+    var diceData: DiceData
+    
     var body: some View {
-        VStack {
-//            Model3D(named: "Scene", bundle: realityKitContentBundle)
-//                .padding(.bottom, 50)
+        NavigationSplitView {
+            VStack {
+                Text("Vision pro App!")
+//                Text(diceData.rolledNumber == 0 ? "🎲" : "\(diceData.rolledNumber)")
+                Text("🤩")
+                    .foregroundStyle(.yellow)
+                    .font(.custom("Menlo", size: 100))
+                    .bold()
+                
+                NavigationLink(destination: ObjectContentView(objectName: "Dice Object")) {
+                    Text("Dice Object")
+                        .padding()
+                }
+                
+                NavigationLink(destination: ObjectContentView(objectName: "Cubes Set")) {
+                    Text("Cubes Set")
+                }
+                
+                NavigationLink(destination: ObjectContentView(objectName: "Table Set")) {
+                    Text("Table Set")
+                }
+                
+                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+                    .toggleStyle(.button)
+                    .padding(.top, 25)
 
-//            Text("this is a vision pro dice app!")
-            Text(diceData.rolledNumber == 0 ? "🎲" : "\(diceData.rolledNumber)")
-                .foregroundStyle(.yellow)
-                .font(.custom("Menlo", size: 100))
-                .bold()
-            
-//            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-//                .toggleStyle(.button)
-//                .padding(.top, 50)
+            }
+            .onChange(of: showImmersiveSpace) { _, newValue in
+            Task {
+                if newValue {
+                    switch await openImmersiveSpace(id: "ImmersiveSpace", value: ["bla"]) {
+                    case .opened:
+                        immersiveSpaceIsShown = true
+                    case .error, .userCancelled:
+                        fallthrough
+                    @unknown default:
+                        immersiveSpaceIsShown = false
+                        showImmersiveSpace = false
+                    }
+                } else if immersiveSpaceIsShown {
+                    await dismissImmersiveSpace()
+                    immersiveSpaceIsShown = false
+                }
+            }
         }
-//        .padding()
-        .task {
-            await openImmersiveSpace(id: "ImmersiveSpace")
+            .padding()
+            .navigationTitle("VisionDIce")
+        } detail: {
+            Text("Detail To Be implementd")
         }
-//        .onChange(of: showImmersiveSpace) { _, newValue in
-//            Task {
-//                if newValue {
-//                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-//                    case .opened:
-//                        immersiveSpaceIsShown = true
-//                    case .error, .userCancelled:
-//                        fallthrough
-//                    @unknown default:
-//                        immersiveSpaceIsShown = false
-//                        showImmersiveSpace = false
-//                    }
-//                } else if immersiveSpaceIsShown {
-//                    await dismissImmersiveSpace()
-//                    immersiveSpaceIsShown = false
-//                }
-//            }
-//        }
     }
-}
-
-#Preview(windowStyle: .automatic) {
-    ContentView(diceData: DiceData())
 }

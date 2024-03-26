@@ -19,13 +19,14 @@ let diceMap = [
 struct ImmersiveView: View {
     @State var diceDropped = false
     var diceData: DiceData
+    var elemen: [String]
 
     var body: some View {
         RealityView { content in
 //            if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
 //                content.add(scene)
 //            }
-            let floor = ModelEntity(mesh: .generatePlane(width: 50, depth: 50),
+            let floor = ModelEntity(mesh: .generatePlane(width: 500, depth: 500),
                                     materials: [OcclusionMaterial()])
             floor.generateCollisionShapes(recursive: false)
             floor.components[PhysicsBodyComponent.self] = .init(
@@ -34,6 +35,14 @@ struct ImmersiveView: View {
             )
             
             content.add(floor)
+            
+            if let diceModel = try? await Entity(named: "dice"),
+               let cubesModel = try? await Entity(named: "cubes"),
+               let tableSetModel = try? await Entity(named: "chairs"),
+               let environment = try? await EnvironmentResource(named: "studio") 
+            {
+                
+            }
 
             if let diceModel = try? await Entity(named: "cubes"),
                let firstDice = diceModel.children.first?.children.first,
@@ -144,6 +153,13 @@ struct ImmersiveView: View {
 }
 
 #Preview {
-    ImmersiveView(diceData: DiceData())
+    ImmersiveView(diceData: DiceData(), elemen: ["name 1", "name 2"])
         .previewLayout(.sizeThatFits)
+}
+
+
+class Bla {
+    static func parser() {
+        
+    }
 }

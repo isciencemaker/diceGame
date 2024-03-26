@@ -16,6 +16,9 @@
 		CE20A9E52B96509F00FA39E0 /* dice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CE20A9E42B96509F00FA39E0 /* dice.usdz */; };
 		CE54A8B82B9A651C0063ABB4 /* cubes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CE54A8B72B9A651C0063ABB4 /* cubes.usdz */; };
 		CE54A8BA2B9A65B50063ABB4 /* with-textures.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CE54A8B92B9A65B50063ABB4 /* with-textures.usdz */; };
+		CE54A8EF2BAD724E0063ABB4 /* chairs.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CE54A8EE2BAD724E0063ABB4 /* chairs.usdz */; };
+		CE54A8F12BAD8FB40063ABB4 /* ObjectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54A8F02BAD8FB40063ABB4 /* ObjectContentView.swift */; };
+		CE54A8F32BAD901E0063ABB4 /* ObjectContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54A8F22BAD901E0063ABB4 /* ObjectContentViewModel.swift */; };
 		CE586B912B965D0000B08992 /* studio.skybox in Resources */ = {isa = PBXBuildFile; fileRef = CE586B902B965D0000B08992 /* studio.skybox */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		CE20A9E42B96509F00FA39E0 /* dice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dice.usdz; sourceTree = "<group>"; };
 		CE54A8B72B9A651C0063ABB4 /* cubes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cubes.usdz; sourceTree = "<group>"; };
 		CE54A8B92B9A65B50063ABB4 /* with-textures.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "with-textures.usdz"; sourceTree = "<group>"; };
+		CE54A8EE2BAD724E0063ABB4 /* chairs.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chairs.usdz; sourceTree = "<group>"; };
+		CE54A8F02BAD8FB40063ABB4 /* ObjectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectContentView.swift; sourceTree = "<group>"; };
+		CE54A8F22BAD901E0063ABB4 /* ObjectContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectContentViewModel.swift; sourceTree = "<group>"; };
 		CE586B902B965D0000B08992 /* studio.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = studio.skybox; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +76,11 @@
 				CE20A9D32B964DB900FA39E0 /* VisionDIceApp.swift */,
 				CE20A9D52B964DB900FA39E0 /* ContentView.swift */,
 				CE20A9D72B964DB900FA39E0 /* ImmersiveView.swift */,
+				CE54A8F02BAD8FB40063ABB4 /* ObjectContentView.swift */,
+				CE54A8F22BAD901E0063ABB4 /* ObjectContentViewModel.swift */,
 				CE20A9D92B964DBA00FA39E0 /* Assets.xcassets */,
 				CE54A8B72B9A651C0063ABB4 /* cubes.usdz */,
+				CE54A8EE2BAD724E0063ABB4 /* chairs.usdz */,
 				CE54A8B92B9A65B50063ABB4 /* with-textures.usdz */,
 				CE20A9E42B96509F00FA39E0 /* dice.usdz */,
 				CE20A9DE2B964DBA00FA39E0 /* Info.plist */,
@@ -157,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE54A8EF2BAD724E0063ABB4 /* chairs.usdz in Resources */,
 				CE20A9DD2B964DBA00FA39E0 /* Preview Assets.xcassets in Resources */,
 				CE20A9E52B96509F00FA39E0 /* dice.usdz in Resources */,
 				CE54A8B82B9A651C0063ABB4 /* cubes.usdz in Resources */,
@@ -174,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE20A9D62B964DB900FA39E0 /* ContentView.swift in Sources */,
+				CE54A8F32BAD901E0063ABB4 /* ObjectContentViewModel.swift in Sources */,
 				CE20A9D42B964DB900FA39E0 /* VisionDIceApp.swift in Sources */,
 				CE20A9D82B964DB900FA39E0 /* ImmersiveView.swift in Sources */,
+				CE54A8F12BAD8FB40063ABB4 /* ObjectContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
